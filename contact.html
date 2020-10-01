@@ -15,7 +15,7 @@
     <li><a href="https://github.com/adhikariparas">Github</a></li>
   </ul>
   <br><br>
-  <form action="index.html" method="post">
+  <form method="post">
     <table>
       <tr>
         <td><strong>Name</strong></td>
@@ -31,9 +31,9 @@
       </tr>
     </table>
     <br>
-    <input type="checkbox" name="" value="">
+    <input type="checkbox" id="tick" onchange="document.getElementById('terms').disabled = !this.checked;" />
     <label for="">Want to send your details?</label>
-    <input type="submit">
+    <button type="submit" class="btn btn1" name="terms" disabled id="terms">Receive</i></button>
   </form>
   <br><br>
   <a href="index.html">Back to Home Page</a>
